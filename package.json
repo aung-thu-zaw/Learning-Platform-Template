@@ -1,0 +1,19 @@
+{
+  "name": "news-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "@preline/overlay": "^2.0.0",
+    "preline": "^2.0.0",
+    "tw-elements": "^1.0.0"
+  }
+}
