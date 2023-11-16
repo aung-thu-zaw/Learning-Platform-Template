@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import forms from "@tailwindcss/forms";
+
 module.exports = {
   content: ["./src/**/*.{html,js}", "node_modules/preline/dist/*.js"],
 
@@ -15,13 +17,7 @@ module.exports = {
         inter: ["Inter", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
       },
-      colors: {
-        brand: "#0EA5E9",
-        dark: "#0F172A",
-        mid: "#CBD5E1",
-        light: "#F8FAFC",
-      },
     },
   },
-  plugins: [require("preline/plugin")],
+  plugins: [forms, require("preline/plugin")],
 };
