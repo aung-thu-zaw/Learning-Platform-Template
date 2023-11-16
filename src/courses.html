@@ -39,14 +39,16 @@
           class="bg-[#1a2436] border-b-2 border-b-blue-300 shadow-md shadow-blue-500 flex flex-wrap sm:justify-start sm:flex-nowrap w-full text-sm py-4"
         >
           <nav
-            class="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
+            class="max-w-[85rem] w-full mx-auto px-4 md:flex md:items-center md:justify-between"
             aria-label="Global"
           >
-            <div class="flex items-center justify-between">
-              <a class="flex-none text-xl font-bold text-white" href="#">
+            <div
+              class="flex items-center justify-between md:w-auto min-w-[200px] w-full"
+            >
+              <a class="inline text-xl font-bold text-white" href="#">
                 E-Learning Platform
               </a>
-              <div class="sm:hidden flex items-center space-x-3">
+              <div class="md:hidden flex items-center space-x-3">
                 <button
                   class="flex font-bold text-xs bg-yellow-500 border-2 shadow border-yellow-200 p-3 text-white rounded-full w-8 h-8 items-center justify-center hover:cursor-pointer hover:bg-yellow-400 transition-all"
                 >
@@ -54,7 +56,7 @@
                 </button>
                 <button
                   type="button"
-                  class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-transparent text-sm font-semibold text-gray-300 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
+                  class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-transparent text-sm font-semibold text-gray-300 shadow-sm disabled:opacity-50 disabled:pointer-events-none"
                   data-hs-collapse="#navbar-collapse-with-animation"
                   aria-controls="navbar-collapse-with-animation"
                   aria-label="Toggle navigation"
@@ -105,10 +107,10 @@
             </div>
             <div
               id="navbar-collapse-with-animation"
-              class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block"
+              class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block"
             >
               <div
-                class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5 w-auto"
+                class="flex flex-col gap-5 mt-5 md:flex-row md:items-center md:justify-end md:mt-0 md:ps-5 w-auto"
               >
                 <a
                   class="font-bold text-yellow-500"
@@ -116,17 +118,17 @@
                   aria-current="page"
                   >Courses</a
                 >
-                <a class="font-bold text-gray-300 hover:text-gray-300" href="#"
+                <a class="font-bold text-gray-300 hover:text-gray-400" href="#"
                   >Quick Tips</a
                 >
 
-                <a class="font-bold text-gray-300 hover:text-gray-300" href="#"
+                <a class="font-bold text-gray-300 hover:text-gray-400" href="#"
                   >Learning Roadmap</a
                 >
-                <a class="font-bold text-gray-300 hover:text-gray-300" href="#"
+                <a class="font-bold text-gray-300 hover:text-gray-400" href="#"
                   >Pricing</a
                 >
-                <a class="font-bold text-gray-300 hover:text-gray-300" href="#"
+                <a class="font-bold text-gray-300 hover:text-gray-400" href="#"
                   >Blog</a
                 >
 
@@ -136,7 +138,7 @@
                   <button
                     id="hs-mega-menu-basic-dr"
                     type="button"
-                    class="flex items-center w-full text-gray-300 hover:text-gray-300 font-bold"
+                    class="flex items-center w-full text-gray-300 hover:text-gray-400 font-bold"
                   >
                     Resources
                     <svg
@@ -156,22 +158,22 @@
                   </button>
 
                   <div
-                    class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 z-10 bg-white sm:shadow-md rounded-lg p-2 before:absolute top-full sm:border before:-top-5 before:start-0 before:w-full before:h-5 hidden"
+                    class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 z-10 bg-gray-800 sm:shadow-md rounded-lg p-2 before:absolute top-full sm:border before:-top-5 before:start-0 before:w-full before:h-5 hidden border-none font-semibold"
                   >
                     <a
-                      class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-300 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500"
+                      class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-300 hover:bg-gray-700 hover:text-yellow-300"
                       href="#"
                     >
                       Packages
                     </a>
                     <a
-                      class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-300 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500"
+                      class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-300 hover:bg-gray-700 hover:text-yellow-300"
                       href="#"
                     >
                       Project Ideas
                     </a>
                     <a
-                      class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-300 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500"
+                      class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-300 hover:bg-gray-700 hover:text-yellow-300"
                       href="#"
                     >
                       Code Example
@@ -192,7 +194,7 @@
                 <div
                   class="flex items-center justify-start font-bold text-gray-300 hover:text-gray-300 space-x-3"
                 >
-                  <button
+                  <!-- <button
                     type="button"
                     class="text-xs rounded-md font-semibold border border-yellow-500 px-4 py-2.5 text-yellow-500 hover:bg-yellow-500 hover:text-white transition-all"
                   >
@@ -206,7 +208,72 @@
                   >
                     <i class="fa-solid fa-crown"></i>
                     Join Premium
-                  </button>
+                  </button> -->
+
+                  <div class="hs-dropdown relative inline-flex">
+                    <button
+                      id="hs-dropdown-slideup-animation"
+                      type="button"
+                      class="hs-dropdown-toggle py-2.5 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg shadow-sm disabled:opacity-50 disabled:pointer-events-none text-white"
+                    >
+                      Aung Thu Zaw
+                      <svg
+                        class="hs-dropdown-open:rotate-180 w-4 h-4"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="m6 9 6 6 6-6" />
+                      </svg>
+                    </button>
+
+                    <div
+                      class="hs-dropdown-menu font-semibold hs-dropdown-open:opacity-100 duration opacity-0 hidden z-10 transition-[margin,opacity] duration-300 mt-2 min-w-[15rem] shadow-md rounded-lg p-2 bg-gray-800 border border-gray-700 divide-gray-700 w-auto"
+                      aria-labelledby="hs-dropdown-slideup-animation"
+                    >
+                      <a
+                        class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm focus:outline-none text-white hover:bg-gray-700 hover:text-yellow-300 focus:bg-gray-700"
+                        href="#"
+                      >
+                        <i class="fa-solid fa-heart"></i>
+                        My Courses
+                      </a>
+                      <a
+                        class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm focus:outline-none text-white hover:bg-gray-700 hover:text-yellow-300 focus:bg-gray-700"
+                        href="#"
+                      >
+                        <i class="fa-solid fa-comment"></i>
+                        My Comments
+                      </a>
+                      <a
+                        class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm focus:outline-none text-white hover:bg-gray-700 hover:text-yellow-300 focus:bg-gray-700"
+                        href="#"
+                      >
+                        <i class="fa-solid fa-credit-card"></i>
+                        My Membership
+                      </a>
+                      <a
+                        class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm focus:outline-none text-white hover:bg-gray-700 hover:text-yellow-300 focus:bg-gray-700"
+                        href="#"
+                      >
+                        <i class="fa-solid fa-gear"></i>
+                        Account Setting
+                      </a>
+                      <a
+                        class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm focus:outline-none text-white hover:bg-gray-700 hover:text-yellow-300 focus:bg-gray-700"
+                        href="#"
+                      >
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Logout
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -216,70 +283,17 @@
       </div>
 
       <header class="px-10 md:pt-20 mt-20 md:mt-0">
-        <!-- <div class="mb-8">
-          <h1 class="font-bold text-4xl text-white text-center">
-            Our Courses Library
-          </h1>
-        </div>
-
-        <div class="flex items-center justify-center flex-wrap space-x-3">
-          <button
-            type="button"
-            class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-yellow-500 text-white hover:bg-yellow-600 disabled:opacity-50 disabled:pointer-events-none transition-all mb-3"
-          >
-            All Topics
-          </button>
-          <button
-            type="button"
-            class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-gray-200 text-gray-300 hover:border-yellow-500 hover:text-yellow-500 disabled:opacity-50 disabled:pointer-events-none transition-all mb-3"
-          >
-            HTML
-          </button>
-          <button
-            type="button"
-            class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-gray-200 text-gray-300 hover:border-yellow-500 hover:text-yellow-500 disabled:opacity-50 disabled:pointer-events-none transition-all mb-3"
-          >
-            CSS
-          </button>
-          <button
-            type="button"
-            class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-gray-200 text-gray-300 hover:border-yellow-500 hover:text-yellow-500 disabled:opacity-50 disabled:pointer-events-none transition-all mb-3"
-          >
-            Javascript
-          </button>
-          <button
-            type="button"
-            class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-gray-200 text-gray-300 hover:border-yellow-500 hover:text-yellow-500 disabled:opacity-50 disabled:pointer-events-none transition-all mb-3"
-          >
-            PHP
-          </button>
-          <button
-            type="button"
-            class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-gray-200 text-gray-300 hover:border-yellow-500 hover:text-yellow-500 disabled:opacity-50 disabled:pointer-events-none transition-all mb-3"
-          >
-            Laravel
-          </button>
-          <button
-            type="button"
-            class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-gray-200 text-gray-300 hover:border-yellow-500 hover:text-yellow-500 disabled:opacity-50 disabled:pointer-events-none transition-all mb-3"
-          >
-            Others
-          </button>
-        </div> -->
-
         <!-- Hero -->
         <div class="relative overflow-hidden">
           <div
             class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-24"
           >
             <div class="text-center">
-              <h1
-                class="text-4xl sm:text-6xl font-bold text-gray-800 dark:text-gray-200"
-              >
+              <h1 class="text-4xl sm:text-6xl font-bold text-gray-200">
                 Our Courses Library
               </h1>
 
-              <p class="mt-3 text-gray-600 dark:text-gray-400">
+              <p class="mt-3 text-gray-400">
                 Stay in the know with insights from industry experts.
               </p>
 
@@ -472,7 +486,7 @@
                             id="hs-dropdown-item-radio-delete"
                             name="hs-dropdown-item-radio"
                             type="radio"
-                            class="shrink-0 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
+                            class="shrink-0 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none bg-gray-800 border-gray-700 checked:bg-blue-500 checked:border-blue-500 focus:ring-offset-gray-800"
                             aria-describedby="hs-dropdown-item-radio-delete-description"
                             checked
                           />
@@ -482,7 +496,7 @@
                           class="ms-3.5"
                         >
                           <span
-                            class="block text-sm font-semibold text-gray-800 dark:text-gray-300"
+                            class="block text-sm font-semibold text-gray-300"
                             >Beginner</span
                           >
                         </label>
@@ -496,7 +510,7 @@
                             id="hs-dropdown-item-radio-delete"
                             name="hs-dropdown-item-radio"
                             type="radio"
-                            class="shrink-0 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
+                            class="shrink-0 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none bg-gray-800 border-gray-700 checked:bg-blue-500 checked:border-blue-500 focus:ring-offset-gray-800"
                             aria-describedby="hs-dropdown-item-radio-delete-description"
                             checked
                           />
@@ -506,7 +520,7 @@
                           class="ms-3.5"
                         >
                           <span
-                            class="block text-sm font-semibold text-gray-800 dark:text-gray-300"
+                            class="block text-sm font-semibold text-gray-300"
                             >Intermediate</span
                           >
                         </label>
@@ -520,7 +534,7 @@
                             id="hs-dropdown-item-radio-delete"
                             name="hs-dropdown-item-radio"
                             type="radio"
-                            class="shrink-0 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
+                            class="shrink-0 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none bg-gray-800 border-gray-700 checked:bg-blue-500 checked:border-blue-500 focus:ring-offset-gray-800"
                             aria-describedby="hs-dropdown-item-radio-delete-description"
                             checked
                           />
@@ -530,7 +544,7 @@
                           class="ms-3.5"
                         >
                           <span
-                            class="block text-sm font-semibold text-gray-800 dark:text-gray-300"
+                            class="block text-sm font-semibold text-gray-300"
                             >Advanced</span
                           >
                         </label>
@@ -553,7 +567,7 @@
                             id="hs-dropdown-item-radio-delete"
                             name="hs-dropdown-item-radio"
                             type="radio"
-                            class="shrink-0 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
+                            class="shrink-0 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none bg-gray-800 border-gray-700 checked:bg-blue-500 checked:border-blue-500 focus:ring-offset-gray-800"
                             aria-describedby="hs-dropdown-item-radio-delete-description"
                             checked
                           />
@@ -563,7 +577,7 @@
                           class="ms-3.5"
                         >
                           <span
-                            class="block text-sm font-semibold text-gray-800 dark:text-gray-300"
+                            class="block text-sm font-semibold text-gray-300"
                             >Short ( < 1 Hour )</span
                           >
                         </label>
@@ -577,7 +591,7 @@
                             id="hs-dropdown-item-radio-delete"
                             name="hs-dropdown-item-radio"
                             type="radio"
-                            class="shrink-0 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
+                            class="shrink-0 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none bg-gray-800 border-gray-700 checked:bg-blue-500 checked:border-blue-500 focus:ring-offset-gray-800"
                             aria-describedby="hs-dropdown-item-radio-delete-description"
                             checked
                           />
@@ -587,7 +601,7 @@
                           class="ms-3.5"
                         >
                           <span
-                            class="block text-sm font-semibold text-gray-800 dark:text-gray-300"
+                            class="block text-sm font-semibold text-gray-300"
                             >Medium ( 1-3 Hours)</span
                           >
                         </label>
@@ -601,7 +615,7 @@
                             id="hs-dropdown-item-radio-delete"
                             name="hs-dropdown-item-radio"
                             type="radio"
-                            class="shrink-0 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
+                            class="shrink-0 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none bg-gray-800 border-gray-700 checked:bg-blue-500 checked:border-blue-500 focus:ring-offset-gray-800"
                             aria-describedby="hs-dropdown-item-radio-delete-description"
                             checked
                           />
@@ -611,7 +625,7 @@
                           class="ms-3.5"
                         >
                           <span
-                            class="block text-sm font-semibold text-gray-800 dark:text-gray-300"
+                            class="block text-sm font-semibold text-gray-300"
                             >Long ( > 3 Hours)</span
                           >
                         </label>
@@ -634,7 +648,7 @@
                             id="hs-dropdown-item-radio-delete"
                             name="hs-dropdown-item-radio"
                             type="radio"
-                            class="shrink-0 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
+                            class="shrink-0 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none bg-gray-800 border-gray-700 checked:bg-blue-500 checked:border-blue-500 focus:ring-offset-gray-800"
                             aria-describedby="hs-dropdown-item-radio-delete-description"
                             checked
                           />
@@ -644,7 +658,7 @@
                           class="ms-3.5"
                         >
                           <span
-                            class="block text-sm font-semibold text-gray-800 dark:text-gray-300"
+                            class="block text-sm font-semibold text-gray-300"
                             >Free</span
                           >
                         </label>
@@ -658,7 +672,7 @@
                             id="hs-dropdown-item-radio-delete"
                             name="hs-dropdown-item-radio"
                             type="radio"
-                            class="shrink-0 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
+                            class="shrink-0 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none bg-gray-800 border-gray-700 checked:bg-blue-500 checked:border-blue-500 focus:ring-offset-gray-800"
                             aria-describedby="hs-dropdown-item-radio-delete-description"
                             checked
                           />
@@ -668,7 +682,7 @@
                           class="ms-3.5"
                         >
                           <span
-                            class="block text-sm font-semibold text-gray-800 dark:text-gray-300"
+                            class="block text-sm font-semibold text-gray-300"
                             >Paid</span
                           >
                         </label>
