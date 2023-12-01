@@ -20,23 +20,12 @@
   </head>
 
   <body>
-    <div
-      class="font-inter w-full min-h-screen bg-[#1a2436] border border-[#1a2436]"
-    >
+    <div class="font-inter w-full min-h-screen bg-gray-50">
+      <!-- Main Navigation Start -->
       <div class="sticky top-0 z-50">
-        <!-- announcement -->
-        <nav
-          class="bg-gray-900 text-white font-bold text-xs text-center w-full p-5"
-        >
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
-          doloribus beatae ab sint ad harum iste. Enim et alias, cumque
-          quibusdam vitae ab veritatis, recusandae, repellat aspernatur dolor
-          neque beatae?
-        </nav>
-
         <!-- Main Navigation Start -->
         <div
-          class="bg-[#1a2436] border-b-2 border-b-blue-300 shadow-md shadow-blue-500 flex flex-wrap sm:justify-start sm:flex-nowrap w-full text-sm py-4"
+          class="fixed top-0 bg-white flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full text-sm py-4 border-b"
         >
           <nav
             class="max-w-[85rem] w-full mx-auto px-4 md:flex md:items-center md:justify-between"
@@ -45,7 +34,7 @@
             <div
               class="flex items-center justify-between md:w-auto min-w-[200px] w-full"
             >
-              <a class="inline text-xl font-bold text-white" href="#">
+              <a class="flex-none text-xl font-bold text-slate-600" href="#">
                 E-Learning Platform
               </a>
               <div class="md:hidden flex items-center space-x-3">
@@ -54,9 +43,10 @@
                 >
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
+
                 <button
                   type="button"
-                  class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-transparent text-sm font-semibold text-gray-300 shadow-sm disabled:opacity-50 disabled:pointer-events-none"
+                  class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-transparent text-sm font-semibold text-gray-700 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
                   data-hs-collapse="#navbar-collapse-with-animation"
                   aria-controls="navbar-collapse-with-animation"
                   aria-label="Toggle navigation"
@@ -118,17 +108,17 @@
                   aria-current="page"
                   >Courses</a
                 >
-                <a class="font-bold text-gray-300 hover:text-gray-400" href="#"
+                <a class="font-bold text-gray-700 hover:text-gray-500" href="#"
                   >Quick Tips</a
                 >
 
-                <a class="font-bold text-gray-300 hover:text-gray-400" href="#"
+                <a class="font-bold text-gray-700 hover:text-gray-500" href="#"
                   >Learning Roadmap</a
                 >
-                <a class="font-bold text-gray-300 hover:text-gray-400" href="#"
+                <a class="font-bold text-gray-700 hover:text-gray-500" href="#"
                   >Pricing</a
                 >
-                <a class="font-bold text-gray-300 hover:text-gray-400" href="#"
+                <a class="font-bold text-gray-700 hover:text-gray-500" href="#"
                   >Blog</a
                 >
 
@@ -138,7 +128,7 @@
                   <button
                     id="hs-mega-menu-basic-dr"
                     type="button"
-                    class="flex items-center w-full text-gray-300 hover:text-gray-400 font-bold"
+                    class="flex items-center w-full text-gray-700 hover:text-gray-500 font-bold"
                   >
                     Resources
                     <svg
@@ -158,22 +148,22 @@
                   </button>
 
                   <div
-                    class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 z-10 bg-gray-800 sm:shadow-md rounded-lg p-2 before:absolute top-full sm:border before:-top-5 before:start-0 before:w-full before:h-5 hidden border-none font-semibold"
+                    class="hs-dropdown-menu font-semibold hs-dropdown-open:opacity-100 duration opacity-0 hidden z-10 transition-[margin,opacity] duration-300 mt-2 min-w-[15rem] rounded-lg p-2 bg-white border divide-gray-700 w-auto"
                   >
                     <a
-                      class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-300 hover:bg-gray-700 hover:text-yellow-300"
+                      class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-700 hover:bg-gray-100"
                       href="#"
                     >
                       Packages
                     </a>
                     <a
-                      class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-300 hover:bg-gray-700 hover:text-yellow-300"
+                      class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-700 hover:bg-gray-100"
                       href="#"
                     >
                       Project Ideas
                     </a>
                     <a
-                      class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-300 hover:bg-gray-700 hover:text-yellow-300"
+                      class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-700 hover:bg-gray-100"
                       href="#"
                     >
                       Code Example
@@ -194,27 +184,27 @@
                 <div
                   class="flex items-center justify-start font-bold text-gray-300 hover:text-gray-300 space-x-3"
                 >
-                  <button
-                    type="button"
-                    class="text-xs rounded-md font-semibold border border-yellow-500 px-4 py-2.5 text-yellow-500 hover:bg-yellow-500 hover:text-white transition-all"
-                  >
-                    <i class="fa-solid fa-user"></i>
-                    Login
-                  </button>
+                  <!-- <button
+                      type="button"
+                      class="text-xs rounded-md font-semibold border border-yellow-500 px-4 py-2.5 text-yellow-500 hover:bg-yellow-500 hover:text-white transition-all"
+                    >
+                      <i class="fa-solid fa-user"></i>
+                      Login
+                    </button>
+  
+                    <button
+                      type="button"
+                      class="text-xs rounded-md font-semibold bg-yellow-500 px-4 py-2.5 text-white hover:bg-yellow-400 transition-all"
+                    >
+                      <i class="fa-solid fa-crown"></i>
+                      Join Premium
+                    </button> -->
 
-                  <button
-                    type="button"
-                    class="text-xs rounded-md font-semibold bg-yellow-500 px-4 py-2.5 text-white hover:bg-yellow-400 transition-all"
-                  >
-                    <i class="fa-solid fa-crown"></i>
-                    Join Premium
-                  </button>
-
-                  <!-- <div class="hs-dropdown relative inline-flex">
+                  <div class="hs-dropdown relative inline-flex">
                     <button
                       id="hs-dropdown-slideup-animation"
                       type="button"
-                      class="hs-dropdown-toggle py-2.5 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg shadow-sm disabled:opacity-50 disabled:pointer-events-none text-white"
+                      class="hs-dropdown-toggle py-2.5 inline-flex items-center gap-x-2 text-sm font-bold text-gray-700 hover:text-gray-500 rounded-lg shadow-sm disabled:opacity-50 disabled:pointer-events-none"
                     >
                       Aung Thu Zaw
                       <svg
@@ -234,46 +224,46 @@
                     </button>
 
                     <div
-                      class="hs-dropdown-menu font-semibold hs-dropdown-open:opacity-100 duration opacity-0 hidden z-10 transition-[margin,opacity] duration-300 mt-2 min-w-[15rem] shadow-md rounded-lg p-2 bg-gray-800 border border-gray-700 divide-gray-700 w-auto"
+                      class="hs-dropdown-menu font-semibold hs-dropdown-open:opacity-100 duration opacity-0 hidden z-10 transition-[margin,opacity] duration-300 mt-2 min-w-[15rem] rounded-lg p-2 bg-white border divide-gray-700 w-auto"
                       aria-labelledby="hs-dropdown-slideup-animation"
                     >
                       <a
-                        class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm focus:outline-none text-white hover:bg-gray-700 hover:text-yellow-300 focus:bg-gray-700"
+                        class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm focus:outline-none text-gray-700 hover:bg-gray-100"
                         href="#"
                       >
                         <i class="fa-solid fa-heart"></i>
                         My Courses
                       </a>
                       <a
-                        class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm focus:outline-none text-white hover:bg-gray-700 hover:text-yellow-300 focus:bg-gray-700"
+                        class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm focus:outline-none text-gray-700 hover:bg-gray-100"
                         href="#"
                       >
                         <i class="fa-solid fa-comment"></i>
                         My Comments
                       </a>
                       <a
-                        class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm focus:outline-none text-white hover:bg-gray-700 hover:text-yellow-300 focus:bg-gray-700"
+                        class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm focus:outline-none text-gray-700 hover:bg-gray-100"
                         href="#"
                       >
                         <i class="fa-solid fa-credit-card"></i>
                         My Membership
                       </a>
                       <a
-                        class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm focus:outline-none text-white hover:bg-gray-700 hover:text-yellow-300 focus:bg-gray-700"
+                        class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm focus:outline-none text-gray-700 hover:bg-gray-100"
                         href="#"
                       >
                         <i class="fa-solid fa-gear"></i>
                         Account Setting
                       </a>
                       <a
-                        class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm focus:outline-none text-white hover:bg-gray-700 hover:text-yellow-300 focus:bg-gray-700"
+                        class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm focus:outline-none text-gray-700 hover:bg-gray-100"
                         href="#"
                       >
                         <i class="fa-solid fa-right-from-bracket"></i>
                         Logout
                       </a>
                     </div>
-                  </div> -->
+                  </div>
                 </div>
               </div>
             </div>
@@ -281,18 +271,20 @@
         </div>
         <!-- Main Navigation End -->
       </div>
+      <!-- Main Navigation End -->
 
-      <section class="px-10 md:pt-20 mt-20 md:mt-0">
+      <section class="pt-10 md:pt-20 mt-10 md:mt-0">
         <!-- Pricing -->
-        <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+        <div class="max-w-[85rem] mx-auto px-4 py-16">
           <!-- Title -->
           <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-            <h2
-              class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white"
+            <h1
+              class="text-4xl md:text-6xl font-bold text-yellow-500 [text-shadow:_0_2px_0_rgb(0_0_0_/_40%)]"
             >
               Pricing
-            </h2>
-            <p class="mt-1 text-gray-600 dark:text-gray-400">
+            </h1>
+
+            <p class="mt-3 font-medium text-gray-500">
               Whatever your status, our offers evolve according to your needs.
             </p>
           </div>
@@ -300,21 +292,18 @@
 
           <!-- Switch -->
           <div class="flex justify-center items-center">
-            <label
-              class="min-w-[3.5rem] text-sm text-gray-500 me-3 dark:text-gray-400"
+            <label class="min-w-[3.5rem] text-sm text-gray-500 me-3"
               >Individual Plan</label
             >
 
             <input
               type="checkbox"
               id="hs-basic-usage"
-              class="relative w-[3.25rem] h-7 p-px bg-gray-100 border-transparent text-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:ring-blue-600 disabled:opacity-50 disabled:pointer-events-none checked:bg-none checked:text-blue-600 checked:border-blue-600 focus:checked:border-blue-600 dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-600 before:inline-block before:w-6 before:h-6 before:bg-white checked:before:bg-blue-200 before:translate-x-0 checked:before:translate-x-full before:rounded-full before:shadow before:transform before:ring-0 before:transition before:ease-in-out before:duration-200 dark:before:bg-gray-400 dark:checked:before:bg-blue-200"
+              class="relative w-[3.25rem] h-7 p-px bg-gray-200 border-transparent text-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:ring-blue-600 disabled:opacity-50 disabled:pointer-events-none checked:bg-none checked:text-blue-600 checked:border-blue-600 focus:checked:border-blue-600 before:inline-block before:w-6 before:h-6 before:bg-white checked:before:bg-blue-200 before:translate-x-0 checked:before:translate-x-full before:rounded-full before:shadow before:transform before:ring-0 before:transition before:ease-in-out before:duration-200"
             />
             <label for="hs-basic-usage" class="sr-only">switch</label>
 
-            <label
-              class="relative min-w-[3.5rem] text-sm text-gray-500 ms-3 dark:text-gray-400"
-            >
+            <label class="relative min-w-[3.5rem] text-sm text-gray-500 ms-3">
               Team Plan
               <span class="absolute -top-10 start-auto -end-28">
                 <span class="flex items-center">
@@ -329,7 +318,7 @@
                     <path
                       d="M43.2951 3.47877C43.8357 3.59191 44.3656 3.24541 44.4788 2.70484C44.5919 2.16427 44.2454 1.63433 43.7049 1.52119L43.2951 3.47877ZM4.63031 24.4936C4.90293 24.9739 5.51329 25.1423 5.99361 24.8697L13.8208 20.4272C14.3011 20.1546 14.4695 19.5443 14.1969 19.0639C13.9242 18.5836 13.3139 18.4152 12.8336 18.6879L5.87608 22.6367L1.92723 15.6792C1.65462 15.1989 1.04426 15.0305 0.563943 15.3031C0.0836291 15.5757 -0.0847477 16.1861 0.187863 16.6664L4.63031 24.4936ZM43.7049 1.52119C32.7389 -0.77401 23.9595 0.99522 17.3905 5.28788C10.8356 9.57127 6.58742 16.2977 4.53601 23.7341L6.46399 24.2659C8.41258 17.2023 12.4144 10.9287 18.4845 6.96211C24.5405 3.00476 32.7611 1.27399 43.2951 3.47877L43.7049 1.52119Z"
                       fill="currentColor"
-                      class="fill-gray-300 dark:fill-gray-700"
+                      class="fill-gray-300"
                     />
                   </svg>
                   <span
@@ -348,14 +337,10 @@
           >
             <!-- Card -->
             <div
-              class="flex flex-col border border-gray-200 text-center rounded-xl p-8 dark:border-gray-700"
+              class="flex flex-col border border-gray-200 text-center rounded-xl p-8"
             >
-              <h4 class="font-medium text-lg text-gray-800 dark:text-gray-200">
-                Monthly plan
-              </h4>
-              <span
-                class="mt-5 font-bold text-5xl text-gray-800 dark:text-gray-200"
-              >
+              <h4 class="font-medium text-lg text-gray-800">Monthly plan</h4>
+              <span class="mt-5 font-bold text-5xl text-gray-800">
                 <span class="font-bold text-2xl -me-2">$</span>
                 149
               </span>
@@ -366,7 +351,7 @@
               <ul class="mt-7 space-y-2.5 text-sm">
                 <li class="flex space-x-2">
                   <svg
-                    class="flex-shrink-0 mt-0.5 h-4 w-4 text-blue-600 dark:text-blue-500"
+                    class="flex-shrink-0 mt-0.5 h-4 w-4 text-blue-600"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -379,14 +364,12 @@
                   >
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
-                  <span class="text-gray-800 dark:text-gray-400">
-                    10 users
-                  </span>
+                  <span class="text-gray-800"> 10 users </span>
                 </li>
 
                 <li class="flex space-x-2">
                   <svg
-                    class="flex-shrink-0 mt-0.5 h-4 w-4 text-blue-600 dark:text-blue-500"
+                    class="flex-shrink-0 mt-0.5 h-4 w-4 text-blue-600"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -399,14 +382,12 @@
                   >
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
-                  <span class="text-gray-800 dark:text-gray-400">
-                    Plan features
-                  </span>
+                  <span class="text-gray-800"> Plan features </span>
                 </li>
 
                 <li class="flex space-x-2">
                   <svg
-                    class="flex-shrink-0 mt-0.5 h-4 w-4 text-blue-600 dark:text-blue-500"
+                    class="flex-shrink-0 mt-0.5 h-4 w-4 text-blue-600"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -419,9 +400,7 @@
                   >
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
-                  <span class="text-gray-800 dark:text-gray-400">
-                    Product support
-                  </span>
+                  <span class="text-gray-800"> Product support </span>
                 </li>
               </ul>
 
@@ -436,14 +415,10 @@
 
             <!-- Card -->
             <div
-              class="flex flex-col border border-gray-200 text-center rounded-xl p-8 dark:border-gray-700"
+              class="flex flex-col border border-gray-200 text-center rounded-xl p-8"
             >
-              <h4 class="font-medium text-lg text-gray-800 dark:text-gray-200">
-                Yearly plan
-              </h4>
-              <span
-                class="mt-5 font-bold text-5xl text-gray-800 dark:text-gray-200"
-              >
+              <h4 class="font-medium text-lg text-gray-800">Yearly plan</h4>
+              <span class="mt-5 font-bold text-5xl text-gray-800">
                 <span class="font-bold text-2xl -me-2">$</span>
                 149
               </span>
@@ -454,7 +429,7 @@
               <ul class="mt-7 space-y-2.5 text-sm">
                 <li class="flex space-x-2">
                   <svg
-                    class="flex-shrink-0 mt-0.5 h-4 w-4 text-blue-600 dark:text-blue-500"
+                    class="flex-shrink-0 mt-0.5 h-4 w-4 text-blue-600"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -467,14 +442,12 @@
                   >
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
-                  <span class="text-gray-800 dark:text-gray-400">
-                    10 users
-                  </span>
+                  <span class="text-gray-800"> 10 users </span>
                 </li>
 
                 <li class="flex space-x-2">
                   <svg
-                    class="flex-shrink-0 mt-0.5 h-4 w-4 text-blue-600 dark:text-blue-500"
+                    class="flex-shrink-0 mt-0.5 h-4 w-4 text-blue-600"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -487,14 +460,12 @@
                   >
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
-                  <span class="text-gray-800 dark:text-gray-400">
-                    Plan features
-                  </span>
+                  <span class="text-gray-800"> Plan features </span>
                 </li>
 
                 <li class="flex space-x-2">
                   <svg
-                    class="flex-shrink-0 mt-0.5 h-4 w-4 text-blue-600 dark:text-blue-500"
+                    class="flex-shrink-0 mt-0.5 h-4 w-4 text-blue-600"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -507,9 +478,7 @@
                   >
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
-                  <span class="text-gray-800 dark:text-gray-400">
-                    Product support
-                  </span>
+                  <span class="text-gray-800"> Product support </span>
                 </li>
               </ul>
 
@@ -524,14 +493,12 @@
 
             <!-- Card -->
             <div
-              class="flex flex-col border border-gray-200 text-center rounded-xl p-8 dark:border-gray-700"
+              class="flex flex-col border border-gray-200 text-center rounded-xl p-8"
             >
-              <h4 class="font-medium text-lg text-gray-800 dark:text-gray-200">
+              <h4 class="font-medium text-lg text-gray-800">
                 Lifetime Membership
               </h4>
-              <span
-                class="mt-5 font-bold text-5xl text-gray-800 dark:text-gray-200"
-              >
+              <span class="mt-5 font-bold text-5xl text-gray-800">
                 <span class="font-bold text-2xl -me-2">$</span>
                 149
               </span>
@@ -542,7 +509,7 @@
               <ul class="mt-7 space-y-2.5 text-sm">
                 <li class="flex space-x-2">
                   <svg
-                    class="flex-shrink-0 mt-0.5 h-4 w-4 text-blue-600 dark:text-blue-500"
+                    class="flex-shrink-0 mt-0.5 h-4 w-4 text-blue-600"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -555,14 +522,12 @@
                   >
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
-                  <span class="text-gray-800 dark:text-gray-400">
-                    10 users
-                  </span>
+                  <span class="text-gray-800"> 10 users </span>
                 </li>
 
                 <li class="flex space-x-2">
                   <svg
-                    class="flex-shrink-0 mt-0.5 h-4 w-4 text-blue-600 dark:text-blue-500"
+                    class="flex-shrink-0 mt-0.5 h-4 w-4 text-blue-600"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -575,14 +540,12 @@
                   >
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
-                  <span class="text-gray-800 dark:text-gray-400">
-                    Plan features
-                  </span>
+                  <span class="text-gray-800"> Plan features </span>
                 </li>
 
                 <li class="flex space-x-2">
                   <svg
-                    class="flex-shrink-0 mt-0.5 h-4 w-4 text-blue-600 dark:text-blue-500"
+                    class="flex-shrink-0 mt-0.5 h-4 w-4 text-blue-600"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -595,9 +558,7 @@
                   >
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
-                  <span class="text-gray-800 dark:text-gray-400">
-                    Product support
-                  </span>
+                  <span class="text-gray-800"> Product support </span>
                 </li>
               </ul>
 
@@ -613,21 +574,25 @@
           <!-- End Grid -->
         </div>
         <!-- End Pricing -->
+        <!-- End Hero -->
+      </section>
 
-        <div class="w-auto max-w-[800px] mx-auto py-10">
+      <!-- FAQ Section -->
+      <section class="pb-20">
+        <div class="w-auto max-w-[800px] mx-auto">
           <h2
-            class="text-xl font-bold md:text-3xl md:leading-tight dark:text-white text-center mb-5"
+            class="text-xl font-bold md:text-3xl md:leading-tight text-center mb-10 text-gray-700"
           >
             Frequently Asked Questions
           </h2>
 
           <div class="hs-accordion-group">
             <div
-              class="hs-accordion active bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-gray-800 dark:border-gray-700"
+              class="hs-accordion active bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg"
               id="hs-bordered-heading-one"
             >
               <button
-                class="hs-accordion-toggle hs-accordion-active:text-blue-600 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:text-gray-400"
+                class="hs-accordion-toggle hs-accordion-active:text-blue-600 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none"
                 aria-controls="hs-basic-bordered-collapse-one"
               >
                 <svg
@@ -667,7 +632,7 @@
                 aria-labelledby="hs-bordered-heading-one"
               >
                 <div class="pb-4 px-5">
-                  <p class="text-gray-800 dark:text-gray-200">
+                  <p class="text-gray-800">
                     <em>This is the third item's accordion body.</em> It is
                     hidden by default, until the collapse plugin adds the
                     appropriate classes that we use to style each element. These
@@ -679,11 +644,11 @@
             </div>
 
             <div
-              class="hs-accordion bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-gray-800 dark:border-gray-700"
+              class="hs-accordion bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg"
               id="hs-bordered-heading-two"
             >
               <button
-                class="hs-accordion-toggle hs-accordion-active:text-blue-600 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:text-gray-400"
+                class="hs-accordion-toggle hs-accordion-active:text-blue-600 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none"
                 aria-controls="hs-basic-bordered-collapse-two"
               >
                 <svg
@@ -723,7 +688,7 @@
                 aria-labelledby="hs-bordered-heading-two"
               >
                 <div class="pb-4 px-5">
-                  <p class="text-gray-800 dark:text-gray-200">
+                  <p class="text-gray-800">
                     <em>This is the second item's accordion body.</em> It is
                     hidden by default, until the collapse plugin adds the
                     appropriate classes that we use to style each element. These
@@ -735,11 +700,11 @@
             </div>
 
             <div
-              class="hs-accordion bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg dark:bg-gray-800 dark:border-gray-700"
+              class="hs-accordion bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg"
               id="hs-bordered-heading-three"
             >
               <button
-                class="hs-accordion-toggle hs-accordion-active:text-blue-600 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:text-gray-400"
+                class="hs-accordion-toggle hs-accordion-active:text-blue-600 inline-flex items-center gap-x-3 w-full font-semibold text-start text-gray-800 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none"
                 aria-controls="hs-basic-bordered-collapse-three"
               >
                 <svg
@@ -779,7 +744,7 @@
                 aria-labelledby="hs-bordered-heading-three"
               >
                 <div class="pb-4 px-5">
-                  <p class="text-gray-800 dark:text-gray-200">
+                  <p class="text-gray-800">
                     <em>This is the first item's accordion body.</em> It is
                     hidden by default, until the collapse plugin adds the
                     appropriate classes that we use to style each element. These
@@ -793,7 +758,7 @@
         </div>
       </section>
 
-      <footer class="bg-gray-900 w-full">
+      <footer class="bg-yellow-600 w-full">
         <div
           class="w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 lg:pt-20 mx-auto"
         >
@@ -808,7 +773,7 @@
                 E-Learning Platform
               </a>
 
-              <p class="inline-flex text-xs text-gray-400">
+              <p class="inline-flex text-xs text-white">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Voluptatum cupiditate, repellat, vero nobis laboriosam labore
                 unde nisi quo possimus commodi culpa perferendis dolores impedit
@@ -823,21 +788,21 @@
               <div class="mt-3 grid space-y-3">
                 <p>
                   <a
-                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200"
+                    class="inline-flex gap-x-2 text-white hover:text-gray-200"
                     href="#"
                     >All Courses</a
                   >
                 </p>
                 <p>
                   <a
-                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200"
+                    class="inline-flex gap-x-2 text-white hover:text-gray-200"
                     href="#"
                     >Free Courses</a
                   >
                 </p>
                 <p>
                   <a
-                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200"
+                    class="inline-flex gap-x-2 text-white hover:text-gray-200"
                     href="#"
                     >Premium Courses</a
                   >
@@ -852,21 +817,21 @@
               <div class="mt-3 grid space-y-3">
                 <p>
                   <a
-                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200"
+                    class="inline-flex gap-x-2 text-white hover:text-gray-200"
                     href="#"
                     >Podcast</a
                   >
                 </p>
                 <p>
                   <a
-                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200"
+                    class="inline-flex gap-x-2 text-white hover:text-gray-200"
                     href="#"
                     >Youtube</a
                   >
                 </p>
                 <p>
                   <a
-                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200"
+                    class="inline-flex gap-x-2 text-white hover:text-gray-200"
                     href="#"
                     >Discord</a
                   >
@@ -881,28 +846,28 @@
               <div class="mt-3 grid space-y-3">
                 <p>
                   <a
-                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200"
+                    class="inline-flex gap-x-2 text-white hover:text-gray-200"
                     href="#"
                     >About us</a
                   >
                 </p>
                 <p>
                   <a
-                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200"
+                    class="inline-flex gap-x-2 text-white hover:text-gray-200"
                     href="#"
                     >Terms & Conditions</a
                   >
                 </p>
                 <p>
                   <a
-                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200"
+                    class="inline-flex gap-x-2 text-white hover:text-gray-200"
                     href="#"
                     >Privacy & Policy</a
                   >
                 </p>
                 <p>
                   <a
-                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200"
+                    class="inline-flex gap-x-2 text-white hover:text-gray-200"
                     href="#"
                     >Support Center</a
                   >
@@ -917,7 +882,7 @@
             class="mt-5 sm:mt-12 grid gap-y-2 sm:gap-y-0 sm:flex sm:justify-between sm:items-center"
           >
             <div class="flex justify-between items-center">
-              <p class="text-sm text-gray-400">
+              <p class="text-sm text-white">
                 © 2023 E-Learning Platform. All rights reserved.
               </p>
             </div>
